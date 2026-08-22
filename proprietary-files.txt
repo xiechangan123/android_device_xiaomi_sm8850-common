@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from Redmi K90 Pro Max (OS3.0.306.0.WPMCNXM). 
+## are from Xiaomi 17 Pro Max (OS3.0.315.0.WPBCNXM). 
 
 # libframemaster.so is commonized due to unique requirements on myron (D2/novatek visdisplaysrv)
 # libmialgo.so and libcamxcommonutils are on device specific
@@ -98,8 +98,6 @@ vendor/lib64/vendor.qti.hardware.agm-V1-ndk.so
 # Audio
 odm/etc/audio/silent-3sec.wav
 odm/lib64/libcrussp.so
-odm/lib64/libfcsam.so
-odm/lib64/libmiam.so;FIX_SONAME
 odm/lib64/libtfacal.so
 odm/lib64/libwindns.so
 vendor/bin/hw/audiohalservice.qti
@@ -317,7 +315,6 @@ vendor/etc/vintf/manifest/vendor.xiaomi.hardware.aidl.intentaware-service.xml
 vendor/etc/vintf/manifest/vendor.xiaomi.hardware.aidlbgservice-service.xml
 vendor/etc/vintf/manifest/vendor.xiaomi.hardware.camera.mivimessage-service.xml
 vendor/etc/vintf/manifest/vendor.xiaomi.hardware.dynamiccameraserver.xml
-vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys.common.xml
 vendor/etc/vintf/manifest/vendor.xiaomi.hardware.postprocservice-service.xml
 vendor/etc/vintf/manifest/vendor.xiaomi.hardware.quickcamera.xml
 vendor/framework/androidx.camera.extensions.impl.jar
@@ -389,7 +386,6 @@ vendor/etc/charger_diag.cfg
 
 # CIT Sensor
 odm/bin/hw/vendor.xiaomi.sensor.citsensorservice.aidl
-odm/etc/cit_param_config.json
 odm/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc
 odm/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice.aidl.xml
 vendor/lib64/vendor.xiaomi.sensor.citsensorservice-V1-ndk.so
@@ -730,7 +726,6 @@ odm/lib64/libdither.so
 odm/lib64/libeyecare.so
 odm/lib64/libflatmode.so
 odm/lib64/libfpsmonitor.so
-odm/lib64/libframemasterintf.so
 odm/lib64/libhistprocess.so
 odm/lib64/libmi_dspp.so
 odm/lib64/libmi-stc-HW-modulate.so
@@ -746,7 +741,6 @@ odm/lib64/libsdr2hdr.so
 odm/lib64/libsre.so
 odm/lib64/libtruetone.so
 odm/lib64/libvideomode.so
-odm/lib64/vendor.xiaomi.hardware.framemaster-V1-ndk.so
 vendor/bin/displayfeature
 vendor/bin/hw/vendor.xiaomi.hardware.displayfeature_aidl-service
 vendor/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc
@@ -757,11 +751,6 @@ vendor/lib64/libdisplayfeatureservice.so
 vendor/lib64/vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk.so
 
 # Dolby
-odm/etc/dolby/dax-default-spatializer.xml
-odm/etc/dolby/dax-default.xml
-odm/etc/surfaceflinger/dolby_vision.cfg
-odm/vendor/etc/dolby_vision.cfg
-odm/vendor/persist/display/dolby_vision.cfg
 vendor/bin/hw/vendor.dolby.dms.service
 vendor/bin/hw/vendor.dolby.media.c2-default-service-dax
 vendor/etc/init/dms-service.rc
@@ -1058,7 +1047,6 @@ vendor/bin/init.kernel.post_boot-canoe_5_2.sh
 vendor/bin/init.kernel.post_boot-canoe_6_1.sh
 vendor/bin/init.kernel.post_boot-canoe_default_6_2.sh
 vendor/bin/init.kernel.post_boot-canoe.sh
-vendor/bin/init.kernel.post_boot-memory.sh
 vendor/bin/init.kernel.post_boot.sh
 vendor/bin/init.qti.kernel.sh
 vendor/bin/init.qti.write.sh
@@ -1249,7 +1237,6 @@ vendor/lib64/libQnnSystem.so
 odm/bin/hw/android.hardware.nqnfc-service.nxp
 odm/etc/init/nfc2-service-nxp.rc
 odm/etc/libnfc-nci.conf:vendor/etc/libnfc-nci.conf
-odm/etc/libnfc-nxp_RF.conf:vendor/etc/libnfc-nxp_RF.conf
 odm/etc/libnfc-nxp.conf:vendor/etc/libnfc-nxp.conf
 odm/etc/vintf/manifest/nfc2-service-nxp.xml
 odm/lib64/nfc_nci.st21nfc.st.so
@@ -1853,16 +1840,10 @@ vendor/lib64/libtime_genoff.so
 
 # TouchFeature
 odm/bin/hw/vendor.xiaomi.hw.touchfeature-service
-odm/bin/toucheventcheck
 odm/etc/init.panel_info.sh
 odm/etc/init/vendor.xiaomi.hw.touchfeature-service.rc
 odm/etc/vintf/manifest/vendor.xiaomi.hw.touchfeature-service.xml
 odm/lib64/libtensorflowlite_touch_c.so
-odm/lib64/libtouchreport_alg_fts.so;FIX_SONAME
-odm/lib64/libtouchreport_alg.so
-odm/lib64/libtouchreport_hal.so
-odm/lib64/libtouchreport_sensor.so
-odm/lib64/libtouchreport.so
 
 # Trusted User Interface
 vendor/bin/hw/vendor.qti.hardware.trustedui-aidl-service-qti
@@ -1961,10 +1942,10 @@ system_ext/lib64/libwfdconfigutils.so|2ba443281a75baf4c40a0bfcbfcd2db296405658
 system_ext/lib64/libwfddisplayconfig.so|f83142f12c2aaef34178b4091d5e03cb563a31ad
 system_ext/lib64/libwfdmminterface.so|e97b771999cc69a76a2918f014ac0aac8e0872c6
 system_ext/lib64/libwfdmmsink.so|d2aa9d4663c4c2fbadcac91724167955ae6a3bac
-system_ext/lib64/libwfdmmsrc_system.so|ab23a6ce749d1ecc9bef869fae0eb3a0e293d389
+system_ext/lib64/libwfdmmsrc_system.so|ab23a6ce749d1ecc9bef869fae0eb3a0e293d389|ab23a6ce749d1ecc9bef869fae0eb3a0e293d389
 system_ext/lib64/libwfdnative.so;SYMLINK=system_ext/priv-app/WfdService/lib/arm64/libwfdnative.so|f3c438b50e32156d630cb2f6ba608104fe5be421
 system_ext/lib64/libwfdrtsp.so|4595976a1897782e22fc7d519c7293d0a81b4d15
-system_ext/lib64/libwfdservice.so|9450ceb1750849a7aca7e38d1203e1e0277c76b0
+system_ext/lib64/libwfdservice.so|9450ceb1750849a7aca7e38d1203e1e0277c76b0|9450ceb1750849a7aca7e38d1203e1e0277c76b0
 system_ext/lib64/libwfdsinksm.so|18fa4c0fed1b5bc4c34a5c29ed11f67891c54ad3
 system_ext/lib64/libwfduibcinterface.so|1d0377b18ca2d204cb30c705cc5f7297308ba733
 system_ext/lib64/libwfduibcsink.so|c3508c6b7bf37d0efa8c5b688faf8345b06a546b
