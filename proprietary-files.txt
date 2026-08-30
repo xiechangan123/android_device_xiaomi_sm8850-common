@@ -1179,12 +1179,10 @@ vendor/lib64/vendor.qti.MemHal-V1-ndk.so
 # Mlipay
 odm/bin/fidoca
 odm/bin/mlipayd
-odm/bin/mtd
 odm/bin/tidad
 odm/etc/init/vendor.xiaomi.hardware.aidl.tidaservice-service.rc
 odm/etc/init/vendor.xiaomi.hardware.mfidoca-service.rc
 odm/etc/init/vendor.xiaomi.hardware.mlipay-service.rc
-odm/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.aidl.mtdservice.xml
 odm/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.aidl.tidaservice.xml
 odm/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mfidoca.xml
 odm/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
